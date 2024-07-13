@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000 linear-gradient(109.6deg, rgba(187, 0, 255, 0.1) 11.2%, rgba(255, 0, 54, 0.1) 100.2%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.inputs{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding: 4vh 0;
+}
+input,button{
+    padding: 10px 20px;
+}
+#grid-container{
+    display: flex;
+    border: 1px solid white;
+}
+.grid-pixel{
+    width: 1.3vh;
+    height: 1.3vh;
+    background: rgba(0, 0, 0, 0);
+}
+.grid-pixel:hover{
+    background: red;
+}
+.grid-row{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.colors{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 5vh;
+    position: absolute;
+    width: 100px;
+    height: 50vh;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+#red{
+    background: red;
+}
+#blue{
+    background: blue;
+}
+#green{
+    background: green;
+}
+#yellow{
+    background: yellow;
+}
+#purple{
+    background: purple;
+}
+#black{
+    background: black;
+}
+#white{
+    background: white;
+}

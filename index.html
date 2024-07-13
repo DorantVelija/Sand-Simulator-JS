@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sand Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<div class="inputs">
+    <input type="text" placeholder="Cols: " id="in-cols">
+    <input type="text" placeholder="Rows: " id="in-rows">
+    <input type="number" placeholder="Sand Speed (ms): " id="in-speed">
+    <button onclick="changeGridSize()">Change Grid!</button>
+</div>
+
+<div class="colors">
+    <div id="red" onclick="changeSand('red')"></div>
+    <div id="blue" onclick="changeSand('blue')"></div>
+    <div id="green" onclick="changeSand('green')"></div>
+    <div id="yellow" onclick="changeSand('yellow')"></div>
+    <div id="purple" onclick="changeSand('purple')"></div>
+    <div id="black" onclick="changeSand('black')"></div>
+    <div id="white" onclick="changeSand('white')"></div>
+</div>
+
+<div class="container">
+    <div id="grid-container">
+
+    </div>
+
+
+</div>
+</body>
+</html>
