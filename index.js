@@ -92,5 +92,14 @@ function changeGridSize(){
     let rows = document.getElementById('in-rows').value
     let cols = document.getElementById('in-cols').value
     let speed = document.getElementById('in-speed').value
+    if(rows === 0){
+        rows = 100
+    }
+    if(cols === 0){
+        cols = 70
+    }
+    if (speed === 0){
+        speed = 20
+    }
     constructGrid(rows, cols, speed)
 }
