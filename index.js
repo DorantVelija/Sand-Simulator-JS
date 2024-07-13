@@ -37,7 +37,7 @@ function constructGrid(nRows, nCols, nSpeed){
             });
             gridItem.addEventListener('mousemove', function() {
                 if (isDragging) {
-                    this.style.backgroundColor = 'blue'
+                    this.style.backgroundColor = 'rgb(225,187,104)\''
                     gravity(this, speed)
                 }
             })
@@ -62,14 +62,14 @@ function gravity(element, speed){
         // Check condition and perform actions
         if (getSpecificElement(posX - 1, posY).style.backgroundColor === "") {
             getSpecificElement(posX, posY).style.backgroundColor = "";
-            getSpecificElement(posX - 1, posY).style.backgroundColor = 'blue';
+            getSpecificElement(posX - 1, posY).style.backgroundColor = 'rgb(225,187,104)';
             posX--;
             // Call applyGravity again after a delay
             setTimeout(applyGravity, speed);
         }
         else if(getSpecificElement(posX - 1, posY - 1).style.backgroundColor === ""){
             getSpecificElement(posX, posY).style.backgroundColor = "";
-            getSpecificElement(posX - 1, posY-1).style.backgroundColor = 'blue';
+            getSpecificElement(posX - 1, posY-1).style.backgroundColor = 'rgb(171,142,75)';
             posX--;
             posY--;
             // Call applyGravity again after a delay
@@ -77,7 +77,7 @@ function gravity(element, speed){
         }
         else if(getSpecificElement(posX - 1, posY + 1).style.backgroundColor === ""){
             getSpecificElement(posX, posY).style.backgroundColor = "";
-            getSpecificElement(posX - 1, posY +1).style.backgroundColor = 'blue';
+            getSpecificElement(posX - 1, posY +1).style.backgroundColor = 'rgb(194,156,74)g';
             posX--;
             posY++;
             // Call applyGravity again after a delay

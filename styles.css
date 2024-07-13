@@ -2,7 +2,8 @@ body{
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background: #000000 linear-gradient(109.6deg, rgba(187, 0, 255, 0.1) 11.2%, rgba(255, 0, 54, 0.1) 100.2%);
+    background: url("https://t4.ftcdn.net/jpg/05/94/30/83/360_F_594308303_U3dFns8dItGAPtWF5GuYdO8GkoGyHCST.jpg");
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -10,14 +11,15 @@ body{
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 .inputs{
     width: 100vw;
     display: flex;
     position: absolute;
     justify-content: center;
-    padding: 4vh 0;
+    padding: 2vh 0;
+    z-index: 3;
 }
 input,button{
     padding: 10px 20px;
@@ -25,6 +27,8 @@ input,button{
 #grid-container{
     display: flex;
     border: 1px solid white;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0);
 }
 .grid-pixel{
     width: 1.3vh;
